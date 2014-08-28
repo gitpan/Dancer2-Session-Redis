@@ -1,0 +1,80 @@
+{
+   "abstract" : "Perl Dancer2 plugin for interaction with key-value-store Redis.",
+   "author" : [
+      "BURNERSK <burnersk@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.141520",
+   "license" : [
+      "mit"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dancer2-Session-Redis",
+   "no_index" : {
+      "directory" : [
+         "example",
+         "t"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Sereal::Decoder" : "0",
+            "Sereal::Encoder" : "0"
+         },
+         "requires" : {
+            "Carp" : "0",
+            "Dancer2::Core::Role::SessionFactory" : "0",
+            "Dancer2::Core::Types" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
+            "Redis" : "0",
+            "Safe::Isa" : "0",
+            "Try::Tiny" : "0",
+            "Type::Tiny" : "0",
+            "perl" : "5.013002",
+            "strictures" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Dancer2::Session::Redis" : {
+         "file" : "lib/Dancer2/Session/Redis.pm",
+         "version" : "0.001"
+      },
+      "Dancer2::Session::Redis::Serialization::Sereal" : {
+         "file" : "lib/Dancer2/Session/Redis/Serialization/Sereal.pm",
+         "version" : "0.001"
+      },
+      "Dancer2::Session::Redis::SerializationRole" : {
+         "file" : "lib/Dancer2/Session/Redis/SerializationRole.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/burnersk/Dancer2-Session-Redis/issues"
+      },
+      "homepage" : "https://github.com/burnersk/Dancer2-Session-Redis",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/burnersk/Dancer2-Session-Redis.git",
+         "web" : "https://github.com/burnersk/Dancer2-Session-Redis"
+      }
+   },
+   "version" : "0.001",
+   "x_contributors" : [
+      "BURNERSK <burnersk@cpan.org>",
+      "SIMBABQUE <simbabque@cpan.org>"
+   ]
+}
+
