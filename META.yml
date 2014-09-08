@@ -2,7 +2,14 @@
 abstract: 'Perl Dancer2 plugin for interaction with key-value-store Redis.'
 author:
   - 'BURNERSK <burnersk@cpan.org>'
-build_requires: {}
+build_requires:
+  Dancer2: '0'
+  Dancer2::Plugin::Redis: '0'
+  HTTP::Request::Common: '0'
+  Plack::Builder: '0'
+  Plack::Test: '0'
+  Test::More: '0'
+  Test::NoWarnings: '0'
 configure_requires:
   ExtUtils::MakeMaker: '0'
 dynamic_config: 0
@@ -19,7 +26,7 @@ no_index:
 provides:
   Dancer2::Session::Redis:
     file: lib/Dancer2/Session/Redis.pm
-    version: '0.001'
+    version: '0.002'
   Dancer2::Session::Redis::Serialization::Sereal:
     file: lib/Dancer2/Session/Redis/Serialization/Sereal.pm
     version: '0.001'
@@ -27,8 +34,7 @@ provides:
     file: lib/Dancer2/Session/Redis/SerializationRole.pm
     version: '0.001'
 recommends:
-  Sereal::Decoder: '0'
-  Sereal::Encoder: '0'
+  Sereal: '0'
 requires:
   Carp: '0'
   Dancer2::Core::Role::SessionFactory: '0'
@@ -45,7 +51,7 @@ resources:
   bugtracker: https://github.com/burnersk/Dancer2-Session-Redis/issues
   homepage: https://github.com/burnersk/Dancer2-Session-Redis
   repository: https://github.com/burnersk/Dancer2-Session-Redis.git
-version: '0.001'
+version: '0.002'
 x_contributors:
   - 'BURNERSK <burnersk@cpan.org>'
   - 'SIMBABQUE <simbabque@cpan.org>'

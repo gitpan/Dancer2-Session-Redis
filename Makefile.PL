@@ -31,21 +31,37 @@ my %WriteMakefileArgs = (
     "Type::Tiny" => 0,
     "strictures" => 0
   },
-  "VERSION" => "0.001",
+  "TEST_REQUIRES" => {
+    "Dancer2" => 0,
+    "Dancer2::Plugin::Redis" => 0,
+    "HTTP::Request::Common" => 0,
+    "Plack::Builder" => 0,
+    "Plack::Test" => 0,
+    "Test::More" => 0,
+    "Test::NoWarnings" => 0
+  },
+  "VERSION" => "0.002",
   "test" => {
-    "TESTS" => ""
+    "TESTS" => "t/*.t"
   }
 );
 
 
 my %FallbackPrereqs = (
   "Carp" => 0,
+  "Dancer2" => 0,
   "Dancer2::Core::Role::SessionFactory" => 0,
   "Dancer2::Core::Types" => 0,
+  "Dancer2::Plugin::Redis" => 0,
+  "HTTP::Request::Common" => 0,
   "Moo" => 0,
   "Moo::Role" => 0,
+  "Plack::Builder" => 0,
+  "Plack::Test" => 0,
   "Redis" => 0,
   "Safe::Isa" => 0,
+  "Test::More" => 0,
+  "Test::NoWarnings" => 0,
   "Try::Tiny" => 0,
   "Type::Tiny" => 0,
   "strictures" => 0
